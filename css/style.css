@@ -1,0 +1,606 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #FFE337;
+}
+
+main {
+    max-width: 1200px;
+}
+
+/*---------------------NAV----------------------------*/
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+header nav img {
+    display: flex;
+    width: 70px;
+}
+
+header nav div ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+
+}
+
+header nav ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 15px 0px 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    outline: none;
+    color: #FC0D8C !important;
+    font-family: "Madimi One", sans-serif !important;
+    font-size: 20px;
+}
+
+.navbar {
+    background-color: #FFE337 !important;
+}
+
+.btn {
+    background-color: #5A7BFE;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Madimi One", sans-serif;
+    transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 430px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+/*-----------------------------------*FOOTER------------------------------------------*/
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+footer p {
+    font-size: 100px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    display: flex;
+    padding: 0;
+}
+
+footer ul li a {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li img {
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 100px;
+}
+
+@media screen and (max-width: 430px) {
+    footer {
+        flex-direction: column;
+    }
+
+    footer p {
+        display: none;
+    }
+}
+
+/*------------------------INDEX------------------------------*/
+
+
+.portada {
+    background-image: url(../img/portada_def.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+}
+
+.portada h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 150px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.portada h3 {
+    margin: 0;
+    padding: 3;
+    position: relative;
+    bottom: 50px;
+    font-size: 20px;
+    font-family: "Madimi One", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FC0D8C;
+    padding: 15px;
+}
+
+
+
+.tarjeta h3 {
+    font-size: 150%;
+    margin: 10px;
+    color: white;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.tarjeta button {
+    background-color: #5A7BFE;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Madimi One", sans-serif;
+    transition-duration: 0.4s;
+}
+
+.tarjeta button:hover {
+    background-color: white;
+    color: #FC0D8C;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #5A7BFE;
+    margin: 0;
+    position: relative;
+    margin: 20px 20px;
+}
+
+.about_me img {
+    display: flex;
+    padding: 20px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_me div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.about_me div h4 {
+    font-family: "Madimi One", sans-serif;
+    font-size: 90px;
+    color: #FFE337;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.about_me div p {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    font-family: "Madimi One", sans-serif;
+    color: white;
+    font-size: 20px;
+    border-radius: 10%;
+}
+
+
+@media screen and (max-width: 430px) {
+    .portada {
+        justify-content: end;
+        background-position: left;
+    }
+
+    .portada h2 {
+        font-size: 100px;
+        font-weight: 200;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .portada h3 {
+        font-size: 30px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.753);
+    }
+
+    .principal,
+    .about_me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        margin: 15px;
+        width: 350px;
+    }
+
+    .about_me div p {
+        padding: 20px;
+    }
+
+    .about_me img {
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+}
+
+
+/*-----------------------------GALLERY--------------------------------*/
+
+.encabezado h1 {
+    display: flex;
+    margin: 0;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 150px;
+    color: #FC0D8C;
+    background-image: url(../img/galeria.jpg);
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+}
+
+.galeria {
+    display: flex;
+    margin: 20px;
+    padding: 0;
+    justify-content: space-around;
+
+}
+
+.galeria img {
+    width: 30%;
+}
+
+.sector_comentarios h3 {
+    font-family: "Madimi One", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.contenedor_tarj_coment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.tarjeta_comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    background-color: #f0e6eb86;
+    border-radius: 5%;
+    -webkit-box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
+}
+
+.tarjeta_comentario img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.tarjeta_comentario h4 {
+    margin: 0%;
+    font-family: "Madimi One", sans-serif;
+    font-size: 20px;
+}
+
+.tarjeta_comentario p {
+    margin: 0;
+    padding: 0;
+    max-width: 300px;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 30px;
+    color: #5A7BFE;
+}
+
+@media screen and (max-width: 430px) {
+    .encabezado {
+        background-color: #FF97EC;
+    }
+
+    .encabezado h1 {
+        font-size: 100px;
+        color: #FC0D8C;
+        align-items: flex-end;
+        background-image: url(../img/galeria_movil.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria img {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contenedor_tarj_coment {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .tarjeta_comentario {
+        margin: 10px;
+    }
+}
+
+/*---------------------shop-----------------------*/
+
+.col{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+}
+
+/*-------------------History----------------------------*/
+.grid_pos {
+    display: flex;
+    justify-content: center;
+}
+
+.comics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/comic.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.comics h2 {
+    align-items: center;
+    text-align: right;
+    color: white;
+    font-family: "Madimi One", sans-serif;
+    font-size: 125px;
+    height: 150px;
+    margin-left: 170px;
+}
+
+.contenedor_tarjeta_hist {
+    margin-top: 35px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    width: 75%;
+    gap: 20px;
+
+}
+
+.tarjeta_hist {
+    display: flex;
+    margin: 0 20px;
+    height: auto;
+    width: auto;
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.tarjeta_hist img {
+    border-radius: 20%;
+    width: 100%;
+    border: 10px solid #5A7BFE;
+    -webkit-box-shadow: 0px 0px 49px 9px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 0px 0px 49px 9px rgba(66, 68, 90, 1);
+    box-shadow: 0px 0px 49px 9px rgba(66, 68, 90, 1);
+}
+
+.tarjeta_hist h3 {
+    font-size: 200%;
+    margin: 10px;
+    color: #FC0D8C;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-style: normal;
+}
+
+
+.tarjeta_hist button {
+    background-color: #5A7BFE;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Madimi One", sans-serif;
+    transition-duration: 0.4s;
+    border-radius: 20%;
+}
+
+.tarjeta_hist button:hover {
+    background-color: white;
+    /* Green */
+    color: #FC0D8C;
+}
+
+@media screen and (max-width: 430px) {
+
+    .comics h2 {
+        font-size: 45px;
+        align-content: end;
+    }
+
+    .contenedor_tarjeta_hist {
+        margin-top: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .tarjeta_hist h3 {
+        padding: 25px;
+    }
+}
+
+/*---------------------CONTACTO------------------------*/
+
+
+.redes_portada h1 {
+    display: block;
+    justify-content: center;
+    margin: 0;
+    font-family: "Madimi One", sans-serif;
+    font-size: 100px;
+    color: #FC0D8C;
+    background-image: url(../img/redes.jpg);
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+}
+
+.conjunto_redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0px;
+}
+
+.redes ul{
+    padding: 0;
+}
+
+.redes li{
+    margin: 30px;
+}
+.imagen_redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: left;
+    align-items: left;
+}
+
+.redes ul li a img {
+    max-width: 100px;
+}
+
+.imagen_redes img {
+    border-radius: 5%;
+    position: relative;
+    top: 20px;
+}
+
+.botton_redes{
+        background-color: #fe5af0;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: "Madimi One", sans-serif;
+        transition-duration: 0.4s;
+        position: relative;
+        bottom: 100px;
+}
+
+.footer_contacto{
+    margin: 0;
+    color: none;
+}
