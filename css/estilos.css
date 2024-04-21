@@ -1,0 +1,355 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #FFE337; }
+  body main {
+    max-width: 1200px; }
+
+.navbar {
+  background-color: #FFE337 !important; }
+  .navbar img {
+    width: 70px; }
+  .navbar .nav-link {
+    text-decoration: none;
+    outline: none;
+    color: #FC0D8C !important;
+    font-family: "Madimi One", sans-serif !important;
+    font-size: 20px; }
+  .navbar .btn {
+    background-color: #5A7BFE;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Madimi One", sans-serif;
+    transition-duration: 0.4s; }
+    .navbar .btn:hover {
+      background-color: white !important;
+      color: #FC0D8C !important; }
+
+.portada {
+  background-image: url(../img/portada_def.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  width: 100%; }
+  .portada h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 150px;
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; }
+  .portada h3 {
+    margin: 0;
+    padding: 3;
+    position: relative;
+    bottom: 50px;
+    font-size: 20px;
+    font-family: "Madimi One", sans-serif;
+    color: white;
+    background-color: black; }
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  bottom: 20px;
+  padding: 0;
+  margin: 0; }
+  .principal .tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FC0D8C;
+    padding: 15px; }
+    .principal .tarjeta h3 {
+      font-size: 150%;
+      margin: 10px;
+      color: white;
+      font-family: "Madimi One", sans-serif;
+      font-weight: 400;
+      font-style: normal; }
+    .principal .tarjeta a button {
+      background-color: #5A7BFE;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      font-family: "Madimi One", sans-serif;
+      transition-duration: 0.4s; }
+      .principal .tarjeta a button:hover {
+        background-color: white;
+        color: #FC0D8C; }
+
+.about_me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #5A7BFE;
+  margin: 0;
+  position: relative;
+  margin: 20px 20px; }
+  .about_me div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px; }
+    .about_me div h4 {
+      font-family: "Madimi One", sans-serif;
+      font-size: 90px;
+      color: #FFE337;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+      text-align: center; }
+    .about_me div p {
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      font-family: "Madimi One", sans-serif;
+      color: white;
+      font-size: 20px;
+      border-radius: 10%; }
+  .about_me img {
+    display: flex;
+    padding: 20px;
+    width: 350px;
+    justify-content: center;
+    align-items: center; }
+
+.encabezado h1 {
+  display: flex;
+  margin: 0;
+  padding: 0%;
+  align-items: center;
+  justify-content: center;
+  font-family: "Madimi One", sans-serif;
+  font-size: 150px;
+  color: #FC0D8C;
+  background-image: url(../img/galeria.jpg);
+  background-size: cover;
+  height: 400px;
+  background-position: center; }
+
+.galeria {
+  display: flex;
+  margin: 20px;
+  padding: 0;
+  justify-content: space-around; }
+  .galeria img {
+    width: 30%; }
+
+.sector_comentarios h3 {
+  font-family: "Madimi One", sans-serif;
+  font-size: 30px;
+  text-align: center; }
+
+.sector_comentarios .contenedor_tarj_coment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .sector_comentarios .contenedor_tarj_coment .tarjeta_comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    background-color: #f0e6eb86;
+    border-radius: 5%;
+    -webkit-box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5); }
+    .sector_comentarios .contenedor_tarj_coment .tarjeta_comentario img {
+      max-width: 150px;
+      border-radius: 50%; }
+    .sector_comentarios .contenedor_tarj_coment .tarjeta_comentario p {
+      margin: 0;
+      padding: 0;
+      max-width: 300px;
+      text-align: center;
+      font-family: "Madimi One", sans-serif;
+      font-size: 30px;
+      color: #5A7BFE; }
+    .sector_comentarios .contenedor_tarj_coment .tarjeta_comentario h4 {
+      margin: 0%;
+      font-family: "Madimi One", sans-serif;
+      font-size: 20px; }
+
+.comics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/comic.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .comics h2 {
+    align-items: center;
+    text-align: right;
+    color: white;
+    font-family: "Madimi One", sans-serif;
+    font-size: 125px;
+    height: 150px;
+    margin-left: 170px; }
+
+.grid_pos {
+  display: flex;
+  justify-content: center; }
+  .grid_pos .contenedor_tarjeta_hist {
+    margin-top: 35px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    width: 75%;
+    gap: 20px; }
+    .grid_pos .contenedor_tarjeta_hist .tarjeta_hist {
+      display: flex;
+      margin: 0 20px;
+      height: auto;
+      width: auto;
+      padding: 15px;
+      flex-direction: column;
+      align-items: center; }
+      .grid_pos .contenedor_tarjeta_hist .tarjeta_hist img {
+        border-radius: 20%;
+        width: 100%;
+        border: 10px solid #5A7BFE;
+        -webkit-box-shadow: 0px 0px 49px 9px #42445a;
+        -moz-box-shadow: 0px 0px 49px 9px #42445a;
+        box-shadow: 0px 0px 49px 9px #42445a; }
+      .grid_pos .contenedor_tarjeta_hist .tarjeta_hist h3 {
+        font-size: 200%;
+        margin: 10px;
+        color: #FC0D8C;
+        text-align: center;
+        font-family: "Madimi One", sans-serif;
+        font-style: normal; }
+      .grid_pos .contenedor_tarjeta_hist .tarjeta_hist button {
+        background-color: #5A7BFE;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: "Madimi One", sans-serif;
+        transition-duration: 0.4s;
+        border-radius: 20%; }
+        .grid_pos .contenedor_tarjeta_hist .tarjeta_hist button:hover {
+          background-color: white;
+          color: #FC0D8C; }
+
+.col {
+  display: flex;
+  justify-content: center;
+  margin: 20px; }
+
+/*--------------nav*/
+@media screen and (max-width: 430px) {
+  nav {
+    flex-direction: column; }
+    nav img {
+      width: 50px; } }
+
+/*-------------index*/
+@media screen and (max-width: 430px) {
+  .portada {
+    justify-content: end;
+    background-position: left; }
+    .portada h2 {
+      font-size: 100px;
+      font-weight: 200;
+      position: relative;
+      bottom: 20px; }
+    .portada h3 {
+      font-size: 30px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.753); }
+  .principal {
+    flex-direction: column;
+    align-items: center; }
+    .principal .tarjeta {
+      margin: 15px;
+      width: 350px; }
+  .about_me {
+    flex-direction: column;
+    align-items: center; }
+    .about_me div p {
+      padding: 20px; }
+    .about_me img {
+      margin-bottom: 30px;
+      padding: 0; } }
+
+/*--------Gallery*/
+@media screen and (max-width: 430px) {
+  .encabezado {
+    background-color: #FF97EC; }
+    .encabezado h1 {
+      font-size: 100px;
+      color: #FC0D8C;
+      align-items: flex-end;
+      background-image: url(../img/galeria_movil.jpg);
+      background-size: contain;
+      background-repeat: no-repeat; }
+  .galeria {
+    flex-direction: column;
+    align-items: center; }
+    .galeria img {
+      width: 100%;
+      padding: 10px; }
+  .sector_comentarios {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; }
+    .sector_comentarios .contenedor_tarj_coment {
+      flex-direction: column; }
+      .sector_comentarios .contenedor_tarj_coment .tarjeta_comentario {
+        margin: 10px; } }
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0; }
+
+footer ul {
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  display: flex;
+  padding: 0; }
+  footer ul a {
+    margin: 0;
+    padding: 0; }
+    footer ul a img {
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      height: 100px; }

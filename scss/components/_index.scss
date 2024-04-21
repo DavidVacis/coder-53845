@@ -1,0 +1,115 @@
+.portada{
+    background-image: url(../img/portada_def.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+        h2{
+            margin: 0;
+            padding: 0;
+            font-size: 150px;
+            font-family: "Honk", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        h3{
+            margin: 0;
+            padding: 3;
+            position: relative;
+            bottom: 50px;
+            font-size: 20px;
+            font-family: "Madimi One", sans-serif;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 20px;
+    padding: 0;
+    margin: 0;
+    .tarjeta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #FC0D8C;
+        padding: 15px;
+        h3{
+            font-size: 150%;
+            margin: 10px;
+            color: white;
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        a{
+            button{
+                background-color: #5A7BFE;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                font-family: "Madimi One", sans-serif;
+                transition-duration: 0.4s;
+                &:hover {
+                    background-color: white;
+                    color: #FC0D8C;
+                }
+            }
+        }
+    }
+}
+
+.about_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #5A7BFE;
+    margin: 0;
+    position: relative;
+    margin: 20px 20px;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        h4{
+            font-family: "Madimi One", sans-serif;
+            font-size: 90px;
+            color: #FFE337;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            text-align: center;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            font-family: "Madimi One", sans-serif;
+            color: white;
+            font-size: 20px;
+            border-radius: 10%;
+        }
+    }
+    img{
+        display: flex;
+        padding: 20px;
+        width: 350px;
+        justify-content: center;
+        align-items: center;
+    }
+}

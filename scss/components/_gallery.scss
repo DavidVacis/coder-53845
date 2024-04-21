@@ -1,0 +1,67 @@
+.encabezado h1 {
+    display: flex;
+    margin: 0;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+    font-family: "Madimi One", sans-serif;
+    font-size: 150px;
+    color: #FC0D8C;
+    background-image: url(../img/galeria.jpg);
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+}
+
+.galeria {
+    display: flex;
+    margin: 20px;
+    padding: 0;
+    justify-content: space-around;
+    img {
+        width: 30%;
+    }
+}
+
+.sector_comentarios {
+    h3 {
+    font-family: "Madimi One", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    }
+    .contenedor_tarj_coment{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .tarjeta_comentario {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            justify-content: center;
+            background-color: #f0e6eb86;
+            border-radius: 5%;
+            -webkit-box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
+            box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
+                img {
+                    max-width: 150px;
+                    border-radius: 50%;
+                }
+                p {
+                    margin: 0;
+                    padding: 0;
+                    max-width: 300px;
+                    text-align: center;
+                    font-family: "Madimi One", sans-serif;
+                    font-size: 30px;
+                    color: #5A7BFE;
+                }
+                h4 {
+                    margin: 0%;
+                    font-family: "Madimi One", sans-serif;
+                    font-size: 20px;
+                }
+            }
+    }
+}
