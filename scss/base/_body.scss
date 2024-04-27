@@ -1,12 +1,20 @@
-body {
-    padding: 0;
-    margin: 0;
+body{
+    @extend %marg_pad;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    background-color: #FFE337;
+    background-color: #FC0D8C;
+    max-width: 100%;
     main {
-        max-width: 1200px;
+        max-width: 1350px;
+        .navbar{
+            background-color: #FC0D8C !important;
+            .nav-link{
+                color: #FFE337 !important;
+                font-size: 25px;
+                margin: 0 10px 0 10px;
+            }
+        }
     }
 }

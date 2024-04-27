@@ -1,17 +1,14 @@
 .portada{
+    @include flex (flex, center, center);
     background-image: url(../img/portada_def.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     height: 400px;
     width: 100%;
         h2{
-            margin: 0;
-            padding: 0;
+            @extend %marg_pad;
             font-size: 150px;
             font-family: "Honk", system-ui;
             font-optical-sizing: auto;
@@ -96,9 +93,7 @@
             text-align: center;
         }
         p{
-            display: flex;
-            justify-content: center;
-            align-items: left;
+            @include flex (flex, center, left);
             font-family: "Madimi One", sans-serif;
             color: white;
             font-size: 20px;

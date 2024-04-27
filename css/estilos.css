@@ -1,53 +1,60 @@
-body {
+body, .portada h2, .encabezado h1, footer ul, footer ul li p, footer ul li a {
   padding: 0;
-  margin: 0;
+  margin: 0; }
+
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  background-color: #FFE337; }
+  background-color: #FC0D8C;
+  max-width: 100%; }
   body main {
-    max-width: 1200px; }
+    max-width: 1350px; }
+    body main .navbar {
+      background-color: #FC0D8C !important; }
+      body main .navbar .nav-link {
+        color: #FFE337 !important;
+        font-size: 25px;
+        margin: 0 10px 0 10px; }
 
-.navbar {
-  background-color: #FFE337 !important; }
-  .navbar img {
-    width: 70px; }
-  .navbar .nav-link {
-    text-decoration: none;
-    outline: none;
+.navbar img {
+  width: 70px; }
+
+.navbar .nav-link {
+  text-decoration: none;
+  outline: none;
+  font-family: "Madimi One", sans-serif !important;
+  font-size: 20px; }
+
+.navbar .btn {
+  background-color: #5A7BFE !important;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Madimi One", sans-serif;
+  transition-duration: 0.4s; }
+  .navbar .btn:hover {
+    background-color: white !important;
     color: #FC0D8C !important;
-    font-family: "Madimi One", sans-serif !important;
-    font-size: 20px; }
-  .navbar .btn {
-    background-color: #5A7BFE;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: "Madimi One", sans-serif;
-    transition-duration: 0.4s; }
-    .navbar .btn:hover {
-      background-color: white !important;
-      color: #FC0D8C !important; }
+    transition-duration: 0.5; }
 
 .portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/portada_def.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   height: 400px;
   width: 100%; }
   .portada h2 {
-    margin: 0;
-    padding: 0;
     font-size: 150px;
     font-family: "Honk", system-ui;
     font-optical-sizing: auto;
@@ -137,10 +144,8 @@ body {
 
 .encabezado h1 {
   display: flex;
-  margin: 0;
-  padding: 0%;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   font-family: "Madimi One", sans-serif;
   font-size: 150px;
   color: #FC0D8C;
@@ -168,10 +173,10 @@ body {
   justify-content: space-around; }
   .sector_comentarios .contenedor_tarj_coment .tarjeta_comentario {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
     background-color: #f0e6eb86;
     border-radius: 5%;
     -webkit-box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
@@ -239,7 +244,7 @@ body {
       .grid_pos .contenedor_tarjeta_hist .tarjeta_hist h3 {
         font-size: 200%;
         margin: 10px;
-        color: #FC0D8C;
+        color: black;
         text-align: center;
         font-family: "Madimi One", sans-serif;
         font-style: normal; }
@@ -263,6 +268,90 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px; }
+
+.conjunto_redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/fondo_contactos.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right; }
+  .conjunto_redes .redes li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; }
+    .conjunto_redes .redes li img {
+      width: 100px; }
+    .conjunto_redes .redes li p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Madimi One", sans-serif !important;
+      font-size: 20px;
+      color: #FC0D8C;
+      background-color: #FFE337;
+      width: 250px;
+      height: 70px;
+      padding: 0;
+      margin: 0px 0px 0px 20px;
+      border-radius: 10%; }
+  .conjunto_redes .imagen_redes {
+    display: flex;
+    justify-content: center; }
+    .conjunto_redes .imagen_redes img {
+      width: 75%; }
+
+footer a {
+  color: #FC0D8C;
+  text-align: center;
+  font-size: 100px;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 0; }
+
+.formulario {
+  padding: 0 100px 0 100px; }
+  .formulario .mb-3 {
+    font-family: "Madimi One", sans-serif !important;
+    font-size: 20px;
+    color: black; }
+  .formulario .d-grid .btn {
+    background-color: #FFE337 !important;
+    font-family: "Madimi One", sans-serif !important;
+    font-size: 20px;
+    color: black; }
+    .formulario .d-grid .btn:hover {
+      background-color: white !important;
+      color: #FC0D8C;
+      transition-duration: 0.5; }
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none; }
+  footer ul li {
+    display: flex;
+    justify-content: space-between; }
+    footer ul li p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px;
+      font-family: "Honk", system-ui;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal; }
+    footer ul li a img {
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      height: 100px; }
 
 /*--------------nav*/
 @media screen and (max-width: 430px) {
@@ -326,30 +415,19 @@ body {
       .sector_comentarios .contenedor_tarj_coment .tarjeta_comentario {
         margin: 10px; } }
 
-footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100px;
-  font-family: "Honk", system-ui;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
-  padding: 0; }
-
-footer ul {
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  display: block;
-  display: flex;
-  padding: 0; }
-  footer ul a {
-    margin: 0;
-    padding: 0; }
-    footer ul a img {
-      justify-content: center;
-      align-items: center;
-      margin: 10px;
-      height: 100px; }
+@media screen and (max-width: 430px) {
+  footer {
+    position: relative;
+    bottom: 50px; }
+    footer ul {
+      flex-direction: row;
+      justify-content: space-around; }
+      footer ul li {
+        justify-content: space-around; }
+        footer ul li p {
+          display: none; }
+        footer ul li a {
+          margin: 0;
+          padding: 0; }
+          footer ul li a img {
+            height: 70px; } }

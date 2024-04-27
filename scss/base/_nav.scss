@@ -1,17 +1,15 @@
 .navbar {
-    background-color: #FFE337 !important;
     img{
         width: 70px;
     }
     .nav-link {
         text-decoration: none;
         outline: none;
-        color: #FC0D8C !important;
         font-family: "Madimi One", sans-serif !important;
         font-size: 20px;
     }
     .btn {
-        background-color: #5A7BFE;
+        background-color: #5A7BFE !important;
         border: none;
         color: white;
         padding: 15px 32px;
@@ -24,6 +22,7 @@
         &:hover{
             background-color: white !important;
             color: #FC0D8C !important;
+            transition-duration: 0.5;
         }
     }
 }

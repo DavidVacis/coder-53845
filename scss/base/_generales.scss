@@ -1,12 +1,10 @@
-body{
+@mixin flex($flex, $justify, $aling) {
+        display: $flex;
+        justify-content: $justify;
+        align-items: $aling;
+}
+
+%marg_pad{
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-    background-color: #FFE337;
-    main {
-        max-width: 1200px;
-    }
 }

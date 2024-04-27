@@ -1,7 +1,5 @@
 .comics {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex (flex, center, center);
     background-image: url(../img/comic.jpg);
     background-position: left;
     background-repeat: no-repeat;
@@ -47,7 +45,7 @@
             h3 {
                 font-size: 200%;
                 margin: 10px;
-                color: #FC0D8C;
+                color: black;
                 text-align: center;
                 font-family: "Madimi One", sans-serif;
                 font-style: normal;

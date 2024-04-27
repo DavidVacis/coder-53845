@@ -1,32 +1,30 @@
 footer{
-    p{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 100px;
-        font-family: "Honk", system-ui;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        margin: 0;
-        padding: 0;
-    }
     ul {
+        @include flex (flex, space-between, center);
         list-style: none;
-        justify-content: center;
-        align-items: center;
-        display: block;
-        display: flex;
-        padding: 0;
-        a {
-            margin: 0;
-            padding: 0;
-            img {
-                justify-content: center;
-                align-items: center;
-                margin: 10px;
-                height: 100px;
+        @extend %marg_pad;
+        li{
+            display: flex;
+            justify-content: space-between;
+            p {
+            @include flex (flex, center, center);
+            font-size: 100px;
+            font-family: "Honk", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            @extend %marg_pad;
+            }  
+            a {
+                @extend %marg_pad;
+                img {
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px;
+                    height: 100px;
+                    }
             }
         }
+        
     }
 }

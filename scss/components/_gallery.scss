@@ -1,9 +1,6 @@
 .encabezado h1 {
-    display: flex;
-    margin: 0;
-    padding: 0%;
-    align-items: center;
-    justify-content: center;
+    @include flex (flex, center, center);
+    @extend %marg_pad;
     font-family: "Madimi One", sans-serif;
     font-size: 150px;
     color: #FC0D8C;
@@ -34,11 +31,9 @@
         flex-direction: row;
         justify-content: space-around;
         .tarjeta_comentario {
-            display: flex;
+            @include flex (flex, center, center);
             flex-direction: column;
-            align-items: center;
             padding: 10px;
-            justify-content: center;
             background-color: #f0e6eb86;
             border-radius: 5%;
             -webkit-box-shadow: -1px 2px 53px -5px rgba(0, 0, 0, 0.5);
