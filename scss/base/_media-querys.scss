@@ -87,6 +87,20 @@
     }   
 }
 
+
+@media screen and (max-width: 850px){
+    .conjunto_redes{
+        background-image: none;
+        .imagen_redes img{
+            display: none;    
+        }
+    }
+    .formulario{
+        padding: 10px;
+    }
+}
+
+
 @media screen and (max-width: 430px){
     footer{
             position: relative;

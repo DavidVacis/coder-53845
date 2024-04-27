@@ -415,6 +415,14 @@ footer ul {
       .sector_comentarios .contenedor_tarj_coment .tarjeta_comentario {
         margin: 10px; } }
 
+@media screen and (max-width: 850px) {
+  .conjunto_redes {
+    background-image: none; }
+    .conjunto_redes .imagen_redes img {
+      display: none; }
+  .formulario {
+    padding: 10px; } }
+
 @media screen and (max-width: 430px) {
   footer {
     position: relative;
