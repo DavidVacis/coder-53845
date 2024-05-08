@@ -41,6 +41,9 @@
         align-items: center;
         background-color: #FC0D8C;
         padding: 15px;
+        img{
+            max-width: 100%; 
+        }
         h3{
             font-size: 150%;
             margin: 10px;
