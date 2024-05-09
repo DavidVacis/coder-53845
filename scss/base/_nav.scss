@@ -8,21 +8,4 @@
         font-family: "Madimi One", sans-serif !important;
         font-size: 20px;
     }
-    .btn {
-        background-color: #5A7BFE !important;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        font-family: "Madimi One", sans-serif;
-        transition-duration: 0.4s;
-        &:hover{
-            background-color: white !important;
-            color: #FC0D8C !important;
-            transition-duration: 0.5;
-        }
-    }
 }
