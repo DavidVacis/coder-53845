@@ -53,8 +53,10 @@ footer {
         color: black;
     }
     .d-grid{
+        border-color: none !important;
         .btn{
             background-color: #FFE337 !important;
+            border-color: none !important;
             font-family: "Madimi One", sans-serif !important;
             font-size: 20px;
             color: black;

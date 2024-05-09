@@ -305,15 +305,18 @@ footer a {
     font-family: "Madimi One", sans-serif !important;
     font-size: 20px;
     color: black; }
-  .formulario .d-grid .btn {
-    background-color: #FFE337 !important;
-    font-family: "Madimi One", sans-serif !important;
-    font-size: 20px;
-    color: black; }
-    .formulario .d-grid .btn:hover {
-      background-color: white !important;
-      color: #FC0D8C;
-      transition-duration: 0.5; }
+  .formulario .d-grid {
+    border-color: none !important; }
+    .formulario .d-grid .btn {
+      background-color: #FFE337 !important;
+      border-color: none !important;
+      font-family: "Madimi One", sans-serif !important;
+      font-size: 20px;
+      color: black; }
+      .formulario .d-grid .btn:hover {
+        background-color: white !important;
+        color: #FC0D8C;
+        transition-duration: 0.5; }
 
 footer ul {
   display: flex;
